@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Good Morning Baby ❤️</title>
+
+<style>
+
+body{
+margin:0;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:Arial;
+background:linear-gradient(135deg,#ff9ecf,#9fdcff);
+}
+
+.box{
+width:90%;
+max-width:400px;
+padding:25px;
+text-align:center;
+background:rgba(255,255,255,0.25);
+border-radius:25px;
+backdrop-filter:blur(10px);
+}
+
+button{
+padding:12px 25px;
+border:none;
+border-radius:30px;
+background:#ff4fa3;
+color:white;
+font-size:18px;
+cursor:pointer;
+}
+
+#scan{
+margin-top:20px;
+color:white;
+font-size:18px;
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="box">
+
+<h1>🌞 Good Morning Baby ❤️</h1>
+
+<p>
+Today's Date:<br>
+Aaj ka din officially tumhari smile ke naam. 😊
+</p>
+
+
+<h3>
+Ready for your Daily Smile Scan?
+</h3>
+
+
+<button onclick="startScan()">
+▶️ START SCAN
+</button>
+
+
+<div id="scan"></div>
+
+
+</div>
+
+
+<script>
+
+function startScan(){
+
+document.getElementById("scan").innerHTML =
+"🤖 Scanner Loading...";
+
+}
+
+</script>
+
+
+</body>
+</html>
