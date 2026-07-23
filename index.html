@@ -1,48 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
 <title>Good Morning Baby ❤️</title>
 
-<style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-body{
-margin:0;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-font-family:Arial;
-background:linear-gradient(135deg,#ff9ecf,#9fdcff);
-}
-
-.box{
-width:90%;
-max-width:400px;
-padding:25px;
-text-align:center;
-background:rgba(255,255,255,0.25);
-border-radius:25px;
-backdrop-filter:blur(10px);
-}
-
-button{
-padding:12px 25px;
-border:none;
-border-radius:30px;
-background:#ff4fa3;
-color:white;
-font-size:18px;
-cursor:pointer;
-}
-
-#scan{
-margin-top:20px;
-color:white;
-font-size:18px;
-}
-
-</style>
+<link rel="stylesheet" href="style.css">
 
 </head>
 
@@ -50,9 +15,13 @@ font-size:18px;
 <body>
 
 
-<div class="box">
+<div class="container">
 
-<h1>🌞 Good Morning Baby ❤️</h1>
+
+<h1>
+🌞 Good Morning Baby ❤️
+</h1>
+
 
 <p>
 Today's Date:<br>
@@ -60,200 +29,58 @@ Aaj ka din officially tumhari smile ke naam. 😊
 </p>
 
 
-<h3>
-Ready for your Daily Smile Scan?
-</h3>
-
-
 <button onclick="startScan()">
 ▶️ START SCAN
 </button>
 
 
-<div id="scan"></div>
+
+<div id="scanBox">
+
+<p id="text">
+🤖 Scanner Loading...
+</p>
+
+</div>
+
+
+
+<div id="result">
+
+
+<h2>
+📋 Final Report
+</h2>
+
+
+<p>
+
+👤 Name:<br>
+Snoor ❤️
+
+<br><br>
+
+🌸 Status:<br>
+Meri Sabse Favorite Person
+
+<br><br>
+
+✨ Cuteness Level:<br>
+Infinite ♾️
+
+</p>
 
 
 </div>
 
 
-<script>
-
-function startScan(){
-
-let scan = document.getElementById("scan");
-
-scan.innerHTML = "Smile Scanner Starting...";
-
-setTimeout(()=>{
-scan.innerHTML = "█░░░░░░░░░ 10%<br>Tumhari profile search ho rahi hai... 👀";
-},1000);
+</div>
 
 
-setTimeout(()=>{
-scan.innerHTML = "████░░░░░░ 40%<br>Secret information collect ho rahi hai... 🤫";
-},2500);
 
-
-setTimeout(()=>{
-scan.innerHTML = "███████░░░ 70%<br>Heart connection verify ho raha hai... ❤️";
-},4000);
-
-
-setTimeout(()=>{
-scan.innerHTML = "██████████ 100%<br>Scan Complete! ✅";
-},5500);
-setTimeout(()=>{
-document.getElementById("scan").innerHTML =
-`
-<h2>📋 Final Report</h2>
-
-<p>👤 Name:<br>
-Snoor ❤️</p>
-
-<p>🌸 Status:<br>
-Meri Sabse Favorite Person</p>
-
-<p>✨ Cuteness Level:<br>
-Infinite ♾️</p>
-
-<p>🤍 Kindness Level:<br>
-100/100</p>
-
-<p>😊 Smile Power:<br>
-Ek smile se mera pura din ban jata hai.</p>
-
-<p>💖 Special Talent:<br>
-Bina permission mera dil chura lena. 😤❤️</p>
-<br>
-
-<h2>🚔 LOVE POLICE DATABASE</h2>
-
-<p>
-Crime Detected:<br>
-❤️ Dil Chori
-</p>
-
-<p>
-Prime Suspect:<br>
-Snoor 🤭
-</p>
-
-<p>
-Victim:<br>
-Jagat ❤️
-</p>
-
-<p>
-Evidence:<br>
-• Cute Smile 😊<br>
-• Innocent Face 🥺<br>
-• Beautiful Eyes ✨
-</p>
-
-<p>
-Punishment Decided:<br>
-Lifetime mere saath rehna. ❤️<br>
-No Bail. No Escape. Only Love. 🤍
-</p>
-`<br>
-
-<h2>❤️ Extra Findings</h2>
-
-<p>
-❤️ Heartbeat:<br>
-Fast ⚡<br>
-Reason: Snoor detected 🤭
-</p>
-
-<p>
-🏡 Safe Place Found:<br>
-→ Mere dil mein. 🤍
-</p>
-
-
-<h2>💌 Secret Note</h2>
-
-<p>
-Pata hai...<br><br>
-
-Kabhi kabhi lagta hai,<br>
-meri life ki sabse achhi notification tum thi. ❤️<br><br>
-
-Aur aaj bhi...<br><br>
-
-meri favourite person...<br>
-meri favourite smile...<br>
-meri favourite feeling...<br><br>
-
-sirf tum ho. ❤️
-</p>
- <br>
-
-<h2>😂 Surprise Check</h2>
-
-<p>
-Checking... 🔍<br><br>
-
-Kya Snoor duniya ki<br>
-sabse pyari ladki hai?
-<br><br>
-
-YES ✅<br>
-YES ✅<br>
-YES ✅<br><br>
-
-Searching another answer...<br>
-
-Error ❌<br>
-
-Aur koi option hi nahi mila. 😂❤️
-</p>
-
-
-<h2>⚠️ Emotional Warning</h2>
-
-<p>
-⚠️ IMPORTANT NOTICE<br><br>
-
-Rona strictly banned. 🚫😭<br><br>
-
-Agar tum royi...<br>
-To ek ladka bahut pareshaan ho jayega.<br><br>
-
-Naam:<br>
-Jagat 🥺❤️
-</p>
- <br>
-
-<h2>🩺 Final Result</h2>
-
-<p>
-Diagnosis:<br>
-Tum officially bahut zyada precious ho. 🥹
-</p>
-
-<p>
-Treatment:<br>
-🤍 Unlimited Virtual Hugs<br>
-❤️ Lifetime Love<br>
-😊 Aur ek cute si smile...<br>
-sirf mere liye.
-</p>
-
-
-<h2>🎁 Final Surprise</h2>
-
-<button onclick="surprise()">
-🙈 Don't Click (Very Dangerous)
-</button>
-
-<div id="surprise"></div>
-           ;
-},7000);
-}
-
-</script>
+<script src="script.js"></script>
 
 
 </body>
+
 </html>
