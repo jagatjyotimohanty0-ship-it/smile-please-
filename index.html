@@ -80,8 +80,28 @@ Ready for your Daily Smile Scan?
 
 function startScan(){
 
-document.getElementById("scan").innerHTML =
-"🤖 Scanner Loading...";
+let scan = document.getElementById("scan");
+
+scan.innerHTML = "Smile Scanner Starting...";
+
+setTimeout(()=>{
+scan.innerHTML = "█░░░░░░░░░ 10%<br>Tumhari profile search ho rahi hai... 👀";
+},1000);
+
+
+setTimeout(()=>{
+scan.innerHTML = "████░░░░░░ 40%<br>Secret information collect ho rahi hai... 🤫";
+},2500);
+
+
+setTimeout(()=>{
+scan.innerHTML = "███████░░░ 70%<br>Heart connection verify ho raha hai... ❤️";
+},4000);
+
+
+setTimeout(()=>{
+scan.innerHTML = "██████████ 100%<br>Scan Complete! ✅";
+},5500);
 
 }
 
